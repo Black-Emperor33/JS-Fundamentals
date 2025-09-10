@@ -1,6 +1,4 @@
-const args = ["Herod", "Pharoah"]; 
-
-const argument = args[0]; 
+const argument = process.argv[2];
 
 if (argument === undefined) {
   console.log("No argument");
