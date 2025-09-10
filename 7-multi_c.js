@@ -1,11 +1,14 @@
-const x = Number(process.argv[2]);
+const arg = process.argv[2];
+const x = Number(arg);
 
-if (!Number.isInteger(x) || x <= 0) {
+if (!Number.isInteger(x)) {
   console.log("Missing number of occurrences");
-} else {
+} else if (x > 0) {
   let result = "";
   for (let i = 0; i < x; i++) {
-    result += "C is fun\n";
+    output += "C is fun";
+    if (i !== n - 1) result += "\n";
   }
-  console.log(result.trim());
+  console.log(result);
 }
+
